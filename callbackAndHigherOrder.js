@@ -147,6 +147,13 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 
 // CODE HERE 
 
+const each = (arr, log) => {
+  arr.forEach((elem, index) => log(elem, index))
+}
+
+// let array = [1, 2, 3, 4]
+// array.forEach((elem, i) => cb(elem, i))
+
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -158,7 +165,7 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 // CODE HERE
 
 
-
+each(names, (name, i) => console.log(`The item at index ${i} is ${name}`))
 
 
 ////////// CHALLENGES //////////
