@@ -190,6 +190,9 @@ each(names, (name, i) => console.log(`The item at index ${i} is ${name}`))
 
 // CODE HERE
 
+const addingFactory = (num) => (num2) => num + num2
+
+
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -204,6 +207,8 @@ each(names, (name, i) => console.log(`The item at index ${i} is ${name}`))
 
 // CODE HERE
 
+let addTen = addingFactory(10);
+
 /*
   Now the inner function is stored in the addTen variable! 
 
@@ -215,6 +220,8 @@ each(names, (name, i) => console.log(`The item at index ${i} is ${name}`))
 */
 
 // CODE HERE
+
+console.log(addTen(11))
 
 /*
   Let's make another function from the addingFactory. 
@@ -229,8 +236,8 @@ each(names, (name, i) => console.log(`The item at index ${i} is ${name}`))
 
 // CODE HERE
 
-
-
+let addTwentyThree = addingFactory(10)
+console.log(addTwentyThree(23))
 
 ////////// CHALLENGE 2 //////////
 
